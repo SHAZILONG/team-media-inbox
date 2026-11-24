@@ -1,0 +1,9 @@
+This upload client uses EasyTier via the etcat browser runtime.
+Source: https://github.com/EasyTier/etcat/tree/dd40b897fd905f1967e785d9591e866207aeb39b/web
+The upstream runtime manifest identifies the compiled EasyTier core and its source revision.
+The original core module has SHA-256 ce8be5649c5ccde2de3dafefa491964fecff22dfea3d367e4b2e4b3ad3f65bc5.
+The runtime and WASI clock bindings have been adapted to support an Asyncify build in browsers without native JS Promise Integration.
+The compatibility module is generated with Binaryen 132, using the asyncify pass on wasi_snapshot_preview1.poll_oneoff.
+Asyncify helpers: @tybys/wasm-util 0.10.5. See Asyncify-LICENSE.txt.
+SHA-256 implementation: js-sha256 0.11.1. See SHA256-LICENSE.txt.
+EasyTier/etcat license: see EasyTier-LICENSE.txt.

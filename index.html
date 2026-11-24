@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#f4f6f3"><title>团队影像收件</title><link rel="stylesheet" href="./style.css"><script defer src="./hash.js"></script><script defer src="./transport.js"></script><script defer src="./app.js"></script></head>
+<body><main><header><div class="drive" aria-hidden="true">↑</div><div><h1>团队影像收件</h1><p>提交的照片和视频将存入公司硬盘。</p></div></header>
+<section id="pair"><p id="msg" role="status">正在连接收件电脑…</p><button id="again" hidden>重新连接</button></section>
+<section id="upload" hidden><button id="pick">选择照片或视频</button><input id="files" type="file" multiple accept="image/*,video/*,.heic,.heif,.dng,.mts,.m2ts,.mkv" hidden><p class="hint">可一次多选。看到“全部已保存”后即可关闭页面。</p></section>
+<section id="queue" hidden><h2 id="summary" aria-live="polite">正在准备上传</h2><ul id="rows"></ul></section></main></body></html>
